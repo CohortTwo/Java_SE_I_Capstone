@@ -1,0 +1,13 @@
+boolean palindrome(String s1){
+String temp="";
+for(int i = s1.length();i>0;i--){
+	temp+= s1.charAt(i-1);
+}
+
+if(s1.equals(temp)){
+return true;
+}else{
+return false;
+}
+
+}
