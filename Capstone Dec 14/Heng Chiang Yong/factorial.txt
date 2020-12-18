@@ -1,0 +1,19 @@
+
+public void factorial(int num){
+int result = 1;
+for (int i = num; i > 0; i--){
+	if( i > 1)
+	   System.out.print(i +" x ");
+        else
+            System.out.print(i);
+	result *=i;
+	}
+	
+	System.out.print(" = " + result);
+}
+
+Scanner inp = new Scanner(System.in);
+System.out.print("Enter an integer : ");
+int number = inp.nextInt();
+
+factorial(number);

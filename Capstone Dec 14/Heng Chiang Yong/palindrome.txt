@@ -1,0 +1,21 @@
+
+ String name ="";
+ String temp = "";
+ Scanner inp = new Scanner(System.in);
+ System.out.print("Enter a word : ");
+ name = inp.next();
+
+public void palinDrome(){
+
+  for(int i = name.length(); i > 0; i--){
+    temp += name.charAt(i-1);
+  }
+   
+  if(temp.equals(name)){
+    System.out.println(name +" is a palindrome");
+  }else
+   {
+    System.out.println(name + " is not a palindrome");
+    //System.out.println(temp);
+   }
+}
