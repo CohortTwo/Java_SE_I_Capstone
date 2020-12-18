@@ -9,7 +9,7 @@ public class BankAccount implements InterestsRates {
 		System.out.println(
 				"Saving Account interest: " + userAccount.savInterestRates(18));
 		System.out.println(
-				"Current Account interest: " + userAccount.cur(12000));
+				"Current Account interest: " + userAccount.currInterestRates(12000));
 		System.out.println("SIBOR rate: " + INTERBANK_RATE);
 	}
 	@Override
