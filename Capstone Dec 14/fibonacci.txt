@@ -1,0 +1,27 @@
+void fibo()
+{
+int a,b,c;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the number to end the series :");
+int num=s.next();
+for (int i=0; i<6; i++){
+System.out.println(i);
+c=a+b;
+a=b;
+b=c;
+}
+}
+
+void fact()
+{
+int fac=1;
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the number to end the series :");
+int n=s.nextInt();
+for (int i=1; i<=n; i++){
+ fac=fac*i;
+}
+System.out.println(fac);
+}
+
+
