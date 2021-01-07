@@ -1,0 +1,16 @@
+Start Vs Run
+difference is that when program calls start() method a new Thread is created and code inside run() method is executed in new Thread 
+while if you call run() method directly no new Thread is created and code inside run() will execute on current Thread.
+
+Create a Thread
+1. Extend the thread class
+2. Implement the Runnable Interface
+3. Write an inner class for the run method and override.
+4. Lambda.
+
+Daemon Thread
+
+1. Always runs in the background
+2. Can be marked explicitly.
+3. Cannot be marked as a daemon once the thread start() has been invoked.
+4. A Daemon thread will be automatically stopped upon the closure of all the other threads (Normal).
