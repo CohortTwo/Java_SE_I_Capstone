@@ -128,10 +128,10 @@ public class EmpRecord {
         this.eDepID = eDepID;
     }
 
- 
-
-
-    
+    @Override
+    public String toString() {
+        return "EmpRecord{" + "eID=" + eID + ", efirstName=" + efirstName + ", elastName=" + elastName + ", eEmail=" + eEmail + ", ePhone=" + ePhone + ", eHireDate=" + eHireDate + ", eJobID=" + eJobID + ", eSalary=" + eSalary + ", eCommPct=" + eCommPct + ", eMgrID=" + eMgrID + ", eDepID=" + eDepID + '}';
+    }
     
 }
 
