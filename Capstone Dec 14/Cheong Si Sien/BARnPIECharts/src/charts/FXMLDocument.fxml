@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="745.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="charts.FXMLDocumentController">
+    <children>
+      <BarChart fx:id="barchart" layoutX="238.0" layoutY="44.0" title="SALARY BAR CHART" visible="false">
+        <xAxis>
+          <CategoryAxis animated="false" label="Employee" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Salary $" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox layoutX="30.0" layoutY="150.0" prefHeight="227.0" prefWidth="216.0" style="-fx-border-color: #FF5733;">
+         <effect>
+            <Glow />
+         </effect>
+      </HBox>
+      <GridPane layoutX="38.0" layoutY="137.0" AnchorPane.topAnchor="150.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtName1" text="John" GridPane.rowIndex="1" />
+            <TextField fx:id="txtSal1" text="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtName2" text="Mary" GridPane.rowIndex="2" />
+            <TextField fx:id="txtSal2" text="200" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtName3" text="Tom" GridPane.rowIndex="3" />
+            <TextField fx:id="txtSal3" text="150" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtSal4" text="120" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtName4" text="Jimmy" GridPane.rowIndex="4" />
+            <TextField fx:id="txtName5" text="Henry" GridPane.rowIndex="5" />
+            <TextField fx:id="txtSal5" text="80" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefHeight="181.0" prefWidth="126.0" text="Name" textFill="#a419d7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="100.0" text="Salary" textFill="#d203f2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="BBar" layoutX="30.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Bar Chart" />
+      <Button fx:id="BPie" layoutX="182.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Pie Chart" />
+      <PieChart fx:id="piechart" layoutX="256.0" layoutY="56.0" prefHeight="424.0" prefWidth="445.0" title="SALARY PIE CHART" visible="false" />
+      <CheckBox fx:id="boxcheck" layoutX="30.0" layoutY="427.0" mnemonicParsing="false" text="Clear History" />
+    </children>
+</AnchorPane>
